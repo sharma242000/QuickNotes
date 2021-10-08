@@ -1,0 +1,15 @@
+
+<textarea mdbInput type="text-area" id = "titleinput" [(ngModel)]="titleModel" placeholder="Title"></textarea><br><br><br>
+
+<textarea id="contentinput" [(ngModel)]="contentModel" placeholder="Content"></textarea><br><br>
+<textarea id="todoinput" [(ngModel)]="todoModel" placeholder="ToDo List"></textarea><br><br>
+<button color="accent" (click)="createQuicknotes()">ADD NOTES</button>
+<hr>
+<p *ngFor= "let i of quicknotes">
+<label id="savedtittle"  style="color:red;font-size: 300%;" >{{i.title}}</label><br><br><br>
+<label id="savedcontent" style="color:rgb(158, 27, 27);font-size: 200%;">{{i.content}}</label><br><br><br>
+<label id="savedtodo"style="color:black;font-size: 120%;">{{i.todo}}<hr></label>
+
+
+
+
